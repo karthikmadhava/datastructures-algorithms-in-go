@@ -9,15 +9,20 @@ func Hello() {
 }
 
 func Add(i, i2 int) int {
-
 	Hello()
 	println("i value is ", i)
 	return Sum(100, 900)
 }
 
 func Sum(i int, j int) int {
-
 	Hello()
 	fmt.Println(i + j)
 	return i + j
+}
+
+func Calc(i int) (int, int) {
+	p := i * i
+	s := i + i
+	//fmt.Println(p, s)
+	return p, s
 }
