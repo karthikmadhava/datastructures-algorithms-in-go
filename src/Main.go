@@ -1,15 +1,8 @@
 package main
 
-import (
-	"fmt"
-	simplefunctions "main/simplefunctions"
-)
+import "main/simplefunctions"
 
 func main() {
-	simplefunctions.Add(
-		1000,
-		9000,
-	)
-	fmt.Println(simplefunctions.Calc(10))
+	simplefunctions.Execute()
 	return
 }
