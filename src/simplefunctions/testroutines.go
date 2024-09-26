@@ -1,10 +1,20 @@
 package simplefunctions
 
-import "fmt"
+import (
+	"fmt"
+	"main/DataStructures"
+)
 
 func Hello() {
 	fmt.Println("Hello World")
 	return
+}
+
+func processArray() {
+	DataStructures.AddPerson(DataStructures.Person{
+		"su",
+		1,
+	}, DataStructures.Init())
 }
 
 func Add(i, y int) int {
@@ -22,13 +32,17 @@ func Calc(i int) (int, int) {
 }
 
 func Execute() int {
-	Hello()
-	fmt.Println("Sum  is ", Sum(1001, 1001))
+	//Hello()
+	/*fmt.Println("Sum  is ", Sum(1001, 1001))
 	fmt.Println("Add is ", Add(
 		1000,
 		900,
 	))
-	fmt.Print("Calc is ")
-	fmt.Println(Calc(10))
+	fmt.Print(
+		"Calc is ",
+		Calc(10),
+	)
+	//fmt.Println(Calc(10))*/
+	processArray()
 	return 1
 }
