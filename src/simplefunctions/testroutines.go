@@ -32,17 +32,16 @@ func Calc(i int) (int, int) {
 }
 
 func Execute() int {
-	//Hello()
-	/*fmt.Println("Sum  is ", Sum(1001, 1001))
-	fmt.Println("Add is ", Add(
-		1000,
-		900,
-	))
-	fmt.Print(
-		"Calc is ",
-		Calc(10),
-	)
-	//fmt.Println(Calc(10))*/
+
 	processArray()
+	//binary search
+	//arr := []int{1, 3, 5, 7, 9, 11, 13, 15}
+	//target := 7
+	//var result = DataStructures.BinarySearch(arr, target)
+	//if result != -1 {
+	//	fmt.Printf("Element found at index %d.\n", result)
+	//} else {
+	//	fmt.Println("Element not found in the array.")
+	//}
 	return 1
 }
